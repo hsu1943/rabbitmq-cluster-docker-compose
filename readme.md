@@ -41,4 +41,4 @@ Log in to RabbitMQ management: http://localhost:15672, you can see the cluster s
 ## Reference
 - [serkodev/rabbitmq-cluster-docker](https://github.com/serkodev/rabbitmq-cluster-docker)
 - [RabbitMQ Clustering Guide](https://www.rabbitmq.com/clustering.html)
-- [hub.docker.com/_/rabbitmq](hhttps://hub.docker.com/_/rabbitmq)
+- [hub.docker.com/_/rabbitmq](https://hub.docker.com/_/rabbitmq)
