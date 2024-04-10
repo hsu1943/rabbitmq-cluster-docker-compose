@@ -42,3 +42,6 @@ docker-compose --env-file ./stack.env up -d
 - [serkodev/rabbitmq-cluster-docker](https://github.com/serkodev/rabbitmq-cluster-docker)
 - [RabbitMQ Clustering Guide](https://www.rabbitmq.com/clustering.html)
 - [hub.docker.com/_/rabbitmq](https://hub.docker.com/_/rabbitmq)
+
+## License
+[MIT](./LICENSE)
