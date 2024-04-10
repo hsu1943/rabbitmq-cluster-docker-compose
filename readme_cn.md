@@ -8,7 +8,7 @@
 2. 下载本项目
 
 ```shell
-git clone git@github.com:hsu1943/rabbitmq-cluster-docker-compose.git
+git clone https://github.com/hsu1943/rabbitmq-cluster-docker-compose.git
 ```
 3. 配置stack.env中的环境变量
 
@@ -21,7 +21,7 @@ RABBITMQ_DEFAULT_PASS=admin
 RABBITMQ_ERLANG_COOKIE=rabbit-cookie
 
 # 本目录路径
-RABBITMQ_PATH=/docker-project/rabbitmq
+RABBITMQ_PATH=.
 ```
 
 4. 为脚本赋予执行权限
@@ -34,3 +34,11 @@ chmod +x ./join-cluster.sh
 ```shell
 docker-compose --env-file ./stack.env up -d
 ```
+
+登录 rabbitmq management：http://localhost:15672，可以看到3个节点的集群状态：
+![rabbitmq-cluster](./images/rabbitmq-cluster.png)
+
+## 参考
+- [serkodev/rabbitmq-cluster-docker](https://github.com/serkodev/rabbitmq-cluster-docker)
+- [RabbitMQ Clustering Guide](https://www.rabbitmq.com/clustering.html)
+- [hub.docker.com/_/rabbitmq](hhttps://hub.docker.com/_/rabbitmq)

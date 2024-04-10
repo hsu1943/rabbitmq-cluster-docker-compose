@@ -8,7 +8,7 @@ Deploy a RabbitMQ cluster with one click using docker-compose, including 3 nodes
 2. Download this project
 
 ```shell
-git clone git@github.com:hsu1943/rabbitmq-cluster-docker-compose.git
+git clone https://github.com/hsu1943/rabbitmq-cluster-docker-compose.git
 ```
 3. Configure the environment variables in stack.env
 
@@ -21,7 +21,7 @@ RABBITMQ_DEFAULT_PASS=admin
 RABBITMQ_ERLANG_COOKIE=rabbit-cookie
 
 # This directory path
-RABBITMQ_PATH=/docker-project/rabbitmq
+RABBITMQ_PATH=.
 ```
 4. Grant execute permission to the script
 
@@ -34,3 +34,11 @@ chmod +x ./join-cluster.sh
 ```shell
 docker-compose --env-file ./stack.env up -d
 ```
+
+Log in to RabbitMQ management: http://localhost:15672, you can see the cluster status of 3 nodes:
+![rabbitmq-cluster](./images/rabbitmq-cluster.png)
+
+## Reference
+- [serkodev/rabbitmq-cluster-docker](https://github.com/serkodev/rabbitmq-cluster-docker)
+- [RabbitMQ Clustering Guide](https://www.rabbitmq.com/clustering.html)
+- [hub.docker.com/_/rabbitmq](hhttps://hub.docker.com/_/rabbitmq)
