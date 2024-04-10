@@ -1,3 +1,5 @@
+English | [简体中文](./readme_cn.md)
+
 ## Introduction
 Deploy a RabbitMQ cluster with one click using docker-compose, including 3 nodes.
 

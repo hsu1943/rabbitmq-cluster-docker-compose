@@ -1,3 +1,5 @@
+[English](./readme.md) | 简体中文
+
 ## 介绍
 使用docker-compose一键部署rabbitmq的集群，包括3个节点。
 
