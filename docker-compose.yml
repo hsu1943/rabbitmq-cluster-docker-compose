@@ -24,7 +24,6 @@ services:
     hostname: rabbitmq2
     ports:
       - "5673:5672"
-      - "15673:15672"
     env_file:
       - stack.env
     environment:
@@ -47,7 +46,6 @@ services:
     hostname: rabbitmq3
     ports:
       - "5674:5672"
-      - "15674:15672"
     env_file:
       - stack.env
     environment:
