@@ -11,6 +11,13 @@
 git clone https://github.com/hsu1943/rabbitmq-cluster-docker-compose.git
 ```
 3. 配置stack.env中的环境变量
+复制一份stack.env.example，命名为stack.env
+
+```shell
+cp stack.env.example stack.env
+```
+
+具体配置：
 
 ```env
 # rabbitmq management 用户名和密码

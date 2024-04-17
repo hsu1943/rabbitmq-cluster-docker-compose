@@ -10,7 +10,16 @@ Deploy a RabbitMQ cluster with one click using docker-compose, including 3 nodes
 ```shell
 git clone https://github.com/hsu1943/rabbitmq-cluster-docker-compose.git
 ```
+
 3. Configure the environment variables in stack.env
+Copy a copy of stack.env.example, named stack.env
+
+
+```shell
+cp stack.env.example stack.env
+```
+
+Specific configuration:
 
 ```env
 # RabbitMQ management username and password
@@ -23,6 +32,7 @@ RABBITMQ_ERLANG_COOKIE=rabbit-cookie
 # This directory path
 RABBITMQ_PATH=.
 ```
+
 4. Grant execute permission to the script
 
 ```shell
