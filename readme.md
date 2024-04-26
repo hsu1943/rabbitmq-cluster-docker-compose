@@ -48,6 +48,10 @@ docker-compose --env-file ./stack.env up -d
 Log in to RabbitMQ management: http://localhost:15672, you can see the cluster status of 3 nodes:
 ![rabbitmq-cluster](./images/rabbitmq-cluster.png)
 
+## Notice
+
+This is just a demo for practicing the deployment of rabbitmq multi-node. Please do not use it in your production environment. In the production environment, different nodes should be deployed on different servers to ensure high availability.
+
 ## Reference
 - [serkodev/rabbitmq-cluster-docker](https://github.com/serkodev/rabbitmq-cluster-docker)
 - [RabbitMQ Clustering Guide](https://www.rabbitmq.com/clustering.html)

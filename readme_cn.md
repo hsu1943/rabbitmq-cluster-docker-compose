@@ -45,6 +45,10 @@ docker-compose --env-file ./stack.env up -d
 登录 rabbitmq management：http://localhost:15672，可以看到3个节点的集群状态：
 ![rabbitmq-cluster](./images/rabbitmq-cluster.png)
 
+## 注意
+
+这只是一个用来实践`rabbitmq`多节点部署的`demo`，请不要将他用于你的生产环境中，生产环境下不同节点应该部署在不同服务器上以保证高可用性。
+
 ## 参考
 - [serkodev/rabbitmq-cluster-docker](https://github.com/serkodev/rabbitmq-cluster-docker)
 - [RabbitMQ Clustering Guide](https://www.rabbitmq.com/clustering.html)
